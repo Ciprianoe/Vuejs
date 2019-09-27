@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Renderizado de listas</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		
+		<main>
+			<!--matriz-->
+		<!--
+			<h2>{{ nombre }}</h2>
+			
+			<ul>
+				<li v-for="dia in horarios">{{dia}}</li>
+				<li v-for="tarea in tareas"> {{tarea.nombre}} <small> ({{tarea.prioridad}})</small></li>
+			</ul>
+			-->
+			
+			<!--matriz de objetos colletions -->
+		<!--	<h2> Tareas indice </h2>
+			<ul>
+				<li v-for="(tarea, index) in tareas">
+					
+					{{index}}-{{tarea.nombre}}
+					<small>
+						({{tarea.prioridad}})
+					</small>
+				</li>
+			</ul>
+			-->
+			
+			
+			<!--objeto-->
+			<h2> Recorriendo un Objeto</h2>
+			
+			<ul>
+				<li v-for="(value, key, index) in personas">
+				
+					{{index}} - {{key}}: {{value}}
+					
+				</li>
+			</ul>
+			
+			
+			<pre>{{ $data }}</pre>
+		
+		</main>
+		<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+		<script src="vue.js"></script>
+	</body>
+</html>
