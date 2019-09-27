@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8410f0d-6196-4f7f-b1e1-65a95ee2eb1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Vuejs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/directivas.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eventos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/renderizadodelistas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eventos.html" beforeDir="false" afterPath="$PROJECT_DIR$/eventos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569612658680</updated>
-      <workItem from="1569612661754" duration="4442000" />
+      <workItem from="1569612661754" duration="6057000" />
     </task>
     <servers />
   </component>

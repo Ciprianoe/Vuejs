@@ -9,9 +9,25 @@
 	</head>
 	<body>
 		
+		<!--en esta seccion vamos a realizar un metodo para agregar y quitar una lista de task o eventos lo que queramos-->
+		
 		<main>
 			
-			<h1> {{mensaje}}</h1>
+			<ul>
+				<li v-for="tarea in tareas">
+					{{tarea}}
+				</li>
+				
+			</ul>
+		<!--	<input type="text" placeholder="Introduce Nueva Tarea" v-model="nuevaTarea">
+			<input type="button" value="Crea Nueva Tarea" v-on:click="addTask">-->
+			
+			<!--con un formulario -->
+			<form v-on:submit.prevent="addTask">
+				<input type="text" placeholder="Introduce Nueva Tarea" v-model="nuevaTarea">
+				<input type="submit" value="Crea Nueva Tarea">
+			</form>
+			
 			
 			<pre>{{ $data }}</pre>
 		

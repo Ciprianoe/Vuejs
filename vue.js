@@ -85,10 +85,29 @@ const vm = new Vue({
 const vm = new Vue({
     el: 'main',
     data:{
+        nuevaTarea: null,
+        tareas:[
+          'Aprender VueJS',
+          'Aprender ES6',
+          'Trabajar Y aprender Todo los dias'
+        ]
 
-        mensaje:'VueJS 2019'
+        },
+
+    methods:{
+        addTask(){
+            //console.log('Funciona!!');
+
+            //this en este caso hace referencia a esta instancia Vue
+            // con el unshift le decimos a array tarea que coloque al inicio el parametro que pasamos que es nueva tarea
+            this.tareas.unshift(this.nuevaTarea);
+            // ahora clear la nueva tarea
+            this.nuevaTarea = null;
+
+
 
         }
+    }
 
 
 
