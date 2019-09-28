@@ -3,19 +3,24 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Directivas</title>
+		<title>Filtros</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body>
-		
-		<main>
-		
-		<h1 v-show="conectado">estamos conectado</h1>
-		<h1 v-if="conectado"> directiva V-IF</h1>
-		<h2 v-if="edad <= 18" > Acceso no autorizado</h2>
-		<h2 v-else-if="edad >= 200"> Eres Inmortal</h2>
-		<h2 v-else>Puedes Entrar</h2>
+	<body>		
+		<main>          
+            
+            <input type="search"  v-model="buscar" placeholder="Buscar pelicula">
+
+			<ul>
+				<li v-for="pelicula in buscarPelicula">
+					{{ pelicula.nombre }}
+				</li>
+				
+			</ul>		
+			
+				<input type="range" min="0" max="10" v-model="minimo">		
+			
 			
 			<pre>{{ $data }}</pre>
 		

@@ -3,19 +3,27 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Directivas</title>
+		<title>Propiedades Computadas</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body>
-		
+	<body>		
 		<main>
-		
-		<h1 v-show="conectado">estamos conectado</h1>
-		<h1 v-if="conectado"> directiva V-IF</h1>
-		<h2 v-if="edad <= 18" > Acceso no autorizado</h2>
-		<h2 v-else-if="edad >= 200"> Eres Inmortal</h2>
-		<h2 v-else>Puedes Entrar</h2>
+            
+            
+            <h1>{{mensajeAlreves}}</h1>
+
+			<ul>
+				<li v-for="tarea in tareaConAtiguedad">
+					{{tarea}}
+				</li>
+				
+			</ul>		
+			<form v-on:submit.prevent="addTask">
+				<input type="text" placeholder="Introduce Nueva Tarea" v-model="nuevaTarea">
+				<input type="submit" value="Crea Nueva Tarea">
+			</form>
+			
 			
 			<pre>{{ $data }}</pre>
 		
